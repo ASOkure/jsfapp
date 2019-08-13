@@ -39,6 +39,7 @@
                 <h:message for="age"/>
                 <h:outputLabel value="Email Address:" for="email"/>
                 <h:inputText id="email" label="Email Address" required="true" value="#{registrationBean.email}">
+                    <f:validator validatorId="emailValidator"/>
                   </h:inputText>
                 <h:message for="email"/>
                 <h:panelGroup/>
